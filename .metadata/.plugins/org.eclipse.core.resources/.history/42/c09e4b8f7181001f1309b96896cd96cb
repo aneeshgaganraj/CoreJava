@@ -1,0 +1,23 @@
+package DataTypes;
+
+import java.util.Scanner;
+
+public class Question15 {
+	public static void main(String[] args) {
+		Scanner scan = new Scanner(System.in);
+		System.out.println("Enter the String please");
+		String s1 = scan.next();
+		int start = 0;
+		int end = s1.length() - 1;
+		boolean val = false;
+		while(start < end) {
+			if(s1.charAt(start) != s1.charAt(end)) {
+				val = false;
+			}
+			else {
+				val = true;
+			}
+		}
+		System.out.println(val);
+	}
+}
